@@ -5,10 +5,6 @@ gcc.zip
 *.msi
 *.iso
 # Local toolchains
-gcc/
-tools/*.zip
-tools/*.exe
-bin/*.elf
 bin/*.bin
 bin/*.hex
 build/

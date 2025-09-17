@@ -1,0 +1,474 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memcpy-stub.o)
+                              CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj (memcpy)
+c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+                              CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj (memset)
+c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-strcmp.o)
+                              CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj (strcmp)
+c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_udivsi3.o)
+                              CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj (__aeabi_uidiv)
+c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_dvmd_tls.o)
+                              c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+Hash                0x14              CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+
+Discarded input sections
+
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/bootheader.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/bootheader.c.obj
+ .text          0x00000000      0x1a4 CMakeFiles/bootloader.elf.dir/src/System/asmutils.s.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/System/asmutils.s.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/System/exchandlers.s.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/System/debug.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/System/debug.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj
+ .text.GetCPUFrequency
+                0x00000000       0x24 CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+ .text.GPIO_Setup.part.0
+                0x00000000      0x38c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+ .text.GPIO_Initialize
+                0x00000000       0x94 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+ .text.GPIO_Setup
+                0x00000000        0xc CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_UnmaskIRQ2
+                0x00000000       0x58 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_MaskIRQ2
+                0x00000000       0x58 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_SetIRQSenseEdge
+                0x00000000       0x58 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_SetIRQSenseLevel
+                0x00000000       0x58 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_UnmaskEINT2
+                0x00000000       0x48 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_MaskEINT2
+                0x00000000       0x48 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_SetEINTSenseEdge
+                0x00000000       0x48 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_SetEINTSenseLevel
+                0x00000000       0x48 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_SetEINTPolarity
+                0x00000000       0xa0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_EnableEINT_D0Event2
+                0x00000000       0x54 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_DisableEINT_D0Event2
+                0x00000000       0x4c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_SetEINTDebounce
+                0x00000000      0x10c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_ADIE_C_IRQ_Handler
+                0x00000000       0x40 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_AEINTCHandler
+                0x00000000       0x4c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_EINTCHandler
+                0x00000000       0x48 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_ChangeInterruptMode
+                0x00000000       0xac CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_UnregisterIRQ
+                0x00000000       0x78 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_RegisterIRQ
+                0x00000000       0xfc CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_Initialize
+                0x00000000      0x1d4 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_UnregisterEINT
+                0x00000000       0x80 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_RegisterEINT
+                0x00000000      0x150 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_EnableEINT
+                0x00000000       0x40 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_DisableEINT
+                0x00000000       0x40 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_EnableIRQ
+                0x00000000       0x40 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text.NVIC_DisableIRQ
+                0x00000000       0x40 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .bss.AEINTHandlers
+                0x00000000       0x38 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .bss.AIRQHandlers
+                0x00000000       0x10 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .bss.EINTHandlers
+                0x00000000       0x64 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .text.RGU_EnableWDT
+                0x00000000       0x34 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .text.RGU_DisableWDT
+                0x00000000       0x14 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .text.RGU_ReadWDTStatus
+                0x00000000       0x30 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .text.RGU_RaiseWDTSWReset
+                0x00000000       0x18 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .text.MPU_AddRegion
+                0x00000000      0x100 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .text.MPU_Initialize
+                0x00000000       0x70 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .text.MPU_EnableCache
+                0x00000000       0x18 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .bss.MpuInfo   0x00000000       0xc4 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_GetPDCode
+                0x00000000       0x20 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_GetContext
+                0x00000000       0x1c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_Initialize
+                0x00000000      0x1c8 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_EnableInterrupts
+                0x00000000        0x4 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_DisableInterrupts
+                0x00000000        0x4 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_FlashRX
+                0x00000000       0x30 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_FlashTX
+                0x00000000       0x30 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_SendChar
+                0x00000000       0x30 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_SendString
+                0x00000000       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_SendBufferPoll
+                0x00000000       0x84 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text.USART_SendBufferInt
+                0x00000000       0x88 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .text          0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+ .text.USC_StopCounter
+                0x00000000       0x18 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+ .text.USC_GetCurrentTicks
+                0x00000000       0x10 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+ .text          0x00000000        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-strcmp.o)
+ .text          0x00000000      0x114 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_udivsi3.o)
+ .text          0x00000000        0x4 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x10000000         0x00800000         xr
+TCM              0x70006000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+START GROUP
+LOAD c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a
+LOAD c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a
+LOAD c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libnosys.a
+END GROUP
+LOAD CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/bootheader.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/System/asmutils.s.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/System/exchandlers.s.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/System/debug.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+LOAD CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+LOAD c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a
+LOAD c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a
+LOAD c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libnosys.a
+START GROUP
+LOAD c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a
+LOAD c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a
+END GROUP
+
+.text           0x70006000     0x10ca
+                0x70006000                __boot_header_base = .
+ *(.boot_header)
+ .boot_header   0x70006000       0xc4 CMakeFiles/bootloader.elf.dir/src/Lib/bootheader.c.obj
+                0x70006000                boot_header
+                0x700060c4                __boot_header_end = .
+ *(.isr_vectors)
+ .isr_vectors   0x700060c4       0x3c CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+                0x700060c4                __isr_vectors
+ *(.reset_handler)
+ .reset_handler
+                0x70006100       0x90 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+                0x70006100                __reset_handler
+ *(.text*)
+ .text          0x70006190       0x18 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+                0x70006190                __undefined_handler
+                0x70006194                __swi_handler
+                0x70006198                __prefetch_handler
+                0x7000619c                __abort_handler
+ .text.BL_CheckFileByDescriptor
+                0x700061a8      0x1f8 CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+                0x700061a8                BL_CheckFileByDescriptor
+ .text.startup.main
+                0x700063a0       0xf0 CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+                0x700063a0                main
+ .text.SHA1_Initialize
+                0x70006490       0x48 CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+                0x70006490                SHA1_Initialize
+ .text.SHA1_ProcessBlock
+                0x700064d8      0x370 CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+                0x700064d8                SHA1_ProcessBlock
+ .text.SHA1_ProcessData
+                0x70006848      0x10c CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+                0x70006848                SHA1_ProcessData
+ .text          0x70006954       0x48 CMakeFiles/bootloader.elf.dir/src/System/exchandlers.s.obj
+                0x70006954                __nvic_irq_handler
+                0x70006978                __nvic_fiq_handler
+ .text.EMI_MemoryRemap
+                0x7000699c       0x24 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj
+                0x7000699c                EMI_MemoryRemap
+ .text.NVIC_C_IRQ_Handler
+                0x700069c0       0x40 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+                0x700069c0                NVIC_C_IRQ_Handler
+ .text.NVIC_C_FIQ_Handler
+                0x70006a00       0x40 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+                0x70006a00                NVIC_C_FIQ_Handler
+ .text.PLL_Initialize
+                0x70006a40      0x108 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj
+                0x70006a40                PLL_Initialize
+ .text.RGU_SetWDTInterval
+                0x70006b48       0x44 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+                0x70006b48                RGU_SetWDTInterval
+ .text.RGU_RestartWDT
+                0x70006b8c       0x18 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+                0x70006b8c                RGU_RestartWDT
+ .text.MPU_DisableCache
+                0x70006ba4       0x28 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+                0x70006ba4                MPU_DisableCache
+ .text.MPU_RestoreCacheEnState
+                0x70006bcc       0x38 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+                0x70006bcc                MPU_RestoreCacheEnState
+ .text.USC_StartCounter
+                0x70006c04       0x18 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+                0x70006c04                USC_StartCounter
+ .text.USC_Pause_us
+                0x70006c1c       0x3c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+                0x70006c1c                USC_Pause_us
+ .text.memcpy   0x70006c58      0x124 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memcpy-stub.o)
+                0x70006c58                memcpy
+ .text.memset   0x70006d7c      0x11c c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+                0x70006d7c                memset
+ .text          0x70006e98      0x224 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-strcmp.o)
+                0x70006e98                strcmp
+ *(.init)
+ *(.fini)
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.rodata*)
+ .rodata.main.str1.1
+                0x700070bc        0xe CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+ *(.eh_frame*)
+                0x000000c4                __boot_header_size = (__boot_header_end - __boot_header_base)
+
+.glue_7         0x700070cc        0x0
+ .glue_7        0x700070cc        0x0 linker stubs
+
+.glue_7t        0x700070cc        0x0
+ .glue_7t       0x700070cc        0x0 linker stubs
+
+.vfp11_veneer   0x700070cc        0x0
+ .vfp11_veneer  0x700070cc        0x0 linker stubs
+
+.v4_bx          0x700070cc        0x0
+ .v4_bx         0x700070cc        0x0 linker stubs
+
+.iplt           0x700070cc        0x0
+ .iplt          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+
+.rel.dyn        0x700070cc        0x0
+ .rel.iplt      0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x700070ca                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x700070ca                __exidx_end = .
+                0x700070cc                . = ALIGN (0x4)
+                0x700070cc                __etext = .
+
+.data           0x700070cc       0x54
+                0x700070cc                __data_start__ = .
+ *(vtable)
+ *(.data*)
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/bootheader.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/System/asmutils.s.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/System/exchandlers.s.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/System/debug.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .data          0x700070cc        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .data.USARTINFO
+                0x700070cc       0x54 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+                0x700070cc                USARTINFO
+ .data          0x70007120        0x0 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+ .data          0x70007120        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memcpy-stub.o)
+ .data          0x70007120        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .data          0x70007120        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-strcmp.o)
+ .data          0x70007120        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_udivsi3.o)
+ .data          0x70007120        0x0 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_dvmd_tls.o)
+                0x70007120                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                PROVIDE (__preinit_array_end = .)
+                0x70007120                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                [!provide]                PROVIDE (__init_array_end = .)
+                0x70007120                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+                [!provide]                PROVIDE (__fini_array_end = .)
+                0x70007120                . = ALIGN (0x4)
+                0x70007120                __data_end__ = .
+
+.igot.plt       0x70007120        0x0
+ .igot.plt      0x70007120        0x0 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+
+.bss            0x70007120       0xe8
+                0x70007120                __bss_start__ = .
+ *(.bss*)
+ .bss.IRQHandlers
+                0x70007120       0xd4 CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ *(COMMON)
+ COMMON         0x700071f4       0x14 CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+                0x700071f4                Hash
+                0x70007208                __bss_end__ = .
+
+.noinit         0x70007208        0x0
+                0x70007208                __noinit_start__ = .
+ *(.noinit*)
+                0x70007208                __noinit_end__ = .
+
+.heap           0x70007208      0xc00
+                0x70007208                __end__ = .
+                0x70007208                end = __end__
+ *(.heap*)
+ .heap          0x70007208      0xc00 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+                0x70007208                __heap_base
+                0x70007e08                __heap_limit
+                0x70007e08                __HeapLimit = .
+                0x7000b000                __StackTop = (ORIGIN (TCM) + LENGTH (TCM))
+                0x70008c00                __StackLimit = (__StackTop - SUMM_StackSz)
+
+.stack_dummy    0x70008c00     0x2400
+ *(.stack)
+ .stack         0x70008c00     0x2400 CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+                0x70008c00                __stack_limit
+                0x7000b000                __stack_top
+                0x10000000                __ROMImageBase = ORIGIN (ROM)
+                0x10800000                __ROMImageLimit = (ORIGIN (ROM) + LENGTH (ROM))
+                [!provide]                PROVIDE (__stack = __StackTop)
+                0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
+OUTPUT(C:\Projects\ultra700\bin\bootloader.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x28
+ .ARM.attributes
+                0x00000000       0x1b CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj
+ .ARM.attributes
+                0x0000001b       0x2c CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+ .ARM.attributes
+                0x00000047       0x2c CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+ .ARM.attributes
+                0x00000073       0x32 CMakeFiles/bootloader.elf.dir/src/Lib/bootheader.c.obj
+ .ARM.attributes
+                0x000000a5       0x1b CMakeFiles/bootloader.elf.dir/src/System/asmutils.s.obj
+ .ARM.attributes
+                0x000000c0       0x1b CMakeFiles/bootloader.elf.dir/src/System/exchandlers.s.obj
+ .ARM.attributes
+                0x000000db       0x32 CMakeFiles/bootloader.elf.dir/src/System/debug.c.obj
+ .ARM.attributes
+                0x0000010d       0x2c CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj
+ .ARM.attributes
+                0x00000139       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj
+ .ARM.attributes
+                0x00000165       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+ .ARM.attributes
+                0x00000191       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .ARM.attributes
+                0x000001bd       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj
+ .ARM.attributes
+                0x000001e9       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .ARM.attributes
+                0x00000215       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .ARM.attributes
+                0x00000241       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .ARM.attributes
+                0x0000026d       0x2c CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+ .ARM.attributes
+                0x00000299       0x2a c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000002c3       0x2a c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000002ed       0x1a c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-strcmp.o)
+ .ARM.attributes
+                0x00000307       0x1c c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000323       0x1c c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_dvmd_tls.o)
+
+.comment        0x00000000       0x4c
+ .comment       0x00000000       0x4c CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj
+                                 0x4d (size before relaxing)
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/bootheader.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/System/debug.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj
+ .comment       0x0000004c       0x4d CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj
+
+.debug_frame    0x00000000       0xec
+ .debug_frame   0x00000000       0x3c c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000003c       0x50 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-memset.o)
+ .debug_frame   0x0000008c       0x40 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib\libc.a(lib_a-strcmp.o)
+ .debug_frame   0x000000cc       0x20 c:/projects/ultra700/gcc/bin/../lib/gcc/arm-none-eabi/9.3.1\libgcc.a(_udivsi3.o)
