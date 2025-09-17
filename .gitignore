@@ -1,2 +1,14 @@
-/bin
-/gcc
+gcc.zip
+*.7z
+*.zip
+*.exe
+*.msi
+*.iso
+# Local toolchains
+gcc/
+tools/*.zip
+tools/*.exe
+bin/*.elf
+bin/*.bin
+bin/*.hex
+build/
