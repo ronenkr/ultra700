@@ -1,0 +1,458 @@
+[
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\startup_MT6261x.S.obj -c C:\\Projects\\ultra700\\src\\startup_MT6261x.S",
+  "file": "C:/Projects/ultra700/src/startup_MT6261x.S",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/startup_MT6261x.S.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Bootloader\\DZ09_boot.c.obj -c C:\\Projects\\ultra700\\src\\Bootloader\\DZ09_boot.c",
+  "file": "C:/Projects/ultra700/src/Bootloader/DZ09_boot.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Bootloader/DZ09_boot.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Bootloader\\sha-1.c.obj -c C:\\Projects\\ultra700\\src\\Bootloader\\sha-1.c",
+  "file": "C:/Projects/ultra700/src/Bootloader/sha-1.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Bootloader/sha-1.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\bootheader.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\bootheader.c",
+  "file": "C:/Projects/ultra700/src/Lib/bootheader.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/bootheader.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\System\\asmutils.s.obj -c C:\\Projects\\ultra700\\src\\System\\asmutils.s",
+  "file": "C:/Projects/ultra700/src/System/asmutils.s",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/System/asmutils.s.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\System\\exchandlers.s.obj -c C:\\Projects\\ultra700\\src\\System\\exchandlers.s",
+  "file": "C:/Projects/ultra700/src/System/exchandlers.s",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/System/exchandlers.s.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\System\\debug.c.obj -c C:\\Projects\\ultra700\\src\\System\\debug.c",
+  "file": "C:/Projects/ultra700/src/System/debug.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/System/debug.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\System\\utils.c.obj -c C:\\Projects\\ultra700\\src\\System\\utils.c",
+  "file": "C:/Projects/ultra700/src/System/utils.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/System/utils.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\MT6261\\Drivers\\emi.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\emi.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/emi.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\MT6261\\Drivers\\gpio.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\gpio.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/gpio.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\MT6261\\Drivers\\nvic.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\nvic.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/nvic.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\MT6261\\Drivers\\pll.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\pll.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/pll.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\MT6261\\Drivers\\rgu.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\rgu.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/rgu.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\MT6261\\Drivers\\tcmcache.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\tcmcache.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/tcmcache.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\MT6261\\Drivers\\usart.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\usart.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/usart.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_BOOTLOADER -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -Os -o CMakeFiles\\bootloader.elf.dir\\src\\Lib\\MT6261\\Drivers\\ustimer.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\ustimer.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/ustimer.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\startup_MT6261x.S.obj -c C:\\Projects\\ultra700\\src\\startup_MT6261x.S",
+  "file": "C:/Projects/ultra700/src/startup_MT6261x.S",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/startup_MT6261x.S.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\DZ09.c.obj -c C:\\Projects\\ultra700\\src\\System\\DZ09.c",
+  "file": "C:/Projects/ultra700/src/System/DZ09.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/DZ09.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\appheader.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\appheader.c",
+  "file": "C:/Projects/ultra700/src/Lib/appheader.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/appheader.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\asmutils.s.obj -c C:\\Projects\\ultra700\\src\\System\\asmutils.s",
+  "file": "C:/Projects/ultra700/src/System/asmutils.s",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/asmutils.s.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\exchandlers.s.obj -c C:\\Projects\\ultra700\\src\\System\\exchandlers.s",
+  "file": "C:/Projects/ultra700/src/System/exchandlers.s",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/exchandlers.s.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\crc.c.obj -c C:\\Projects\\ultra700\\src\\System\\crc.c",
+  "file": "C:/Projects/ultra700/src/System/crc.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/crc.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\debug.c.obj -c C:\\Projects\\ultra700\\src\\System\\debug.c",
+  "file": "C:/Projects/ultra700/src/System/debug.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/debug.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\dlist.c.obj -c C:\\Projects\\ultra700\\src\\System\\dlist.c",
+  "file": "C:/Projects/ultra700/src/System/dlist.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/dlist.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\evmngr.c.obj -c C:\\Projects\\ultra700\\src\\System\\evmngr.c",
+  "file": "C:/Projects/ultra700/src/System/evmngr.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/evmngr.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\fscache.c.obj -c C:\\Projects\\ultra700\\src\\System\\fscache.c",
+  "file": "C:/Projects/ultra700/src/System/fscache.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/fscache.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\init.c.obj -c C:\\Projects\\ultra700\\src\\System\\init.c",
+  "file": "C:/Projects/ultra700/src/System/init.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/init.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\lrtimer.c.obj -c C:\\Projects\\ultra700\\src\\System\\lrtimer.c",
+  "file": "C:/Projects/ultra700/src/System/lrtimer.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/lrtimer.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\memory.c.obj -c C:\\Projects\\ultra700\\src\\System\\memory.c",
+  "file": "C:/Projects/ultra700/src/System/memory.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/memory.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\pmngr.c.obj -c C:\\Projects\\ultra700\\src\\System\\pmngr.c",
+  "file": "C:/Projects/ultra700/src/System/pmngr.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/pmngr.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\resource.c.obj -c C:\\Projects\\ultra700\\src\\System\\resource.c",
+  "file": "C:/Projects/ultra700/src/System/resource.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/resource.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\ringbuf.c.obj -c C:\\Projects\\ultra700\\src\\System\\ringbuf.c",
+  "file": "C:/Projects/ultra700/src/System/ringbuf.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/ringbuf.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\sf.c.obj -c C:\\Projects\\ultra700\\src\\System\\sf.c",
+  "file": "C:/Projects/ultra700/src/System/sf.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/sf.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\tlsf.c.obj -c C:\\Projects\\ultra700\\src\\System\\tlsf.c",
+  "file": "C:/Projects/ultra700/src/System/tlsf.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/tlsf.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\System\\utils.c.obj -c C:\\Projects\\ultra700\\src\\System\\utils.c",
+  "file": "C:/Projects/ultra700/src/System/utils.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/System/utils.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\auxadc.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\auxadc.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/auxadc.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/auxadc.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\afe.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\afe.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/afe.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/afe.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\emi.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\emi.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/emi.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/emi.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\gpio.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\gpio.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/gpio.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/gpio.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\gpt.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\gpt.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/gpt.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/gpt.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\lcdif.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\lcdif.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/lcdif.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/lcdif.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\msdc.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\msdc.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/msdc.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/msdc.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\nvic.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\nvic.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/nvic.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/nvic.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\pctl.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\pctl.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/pctl.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/pctl.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\pll.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\pll.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/pll.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/pll.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\pmu.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\pmu.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/pmu.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/pmu.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\pwm.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\pwm.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/pwm.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/pwm.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\rgu.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\rgu.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/rgu.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/rgu.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\rtc.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\rtc.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/rtc.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/rtc.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\sfi.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\sfi.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/sfi.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/sfi.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\spi.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\spi.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/spi.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/spi.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\tcmcache.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\tcmcache.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/tcmcache.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/tcmcache.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\usart.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\usart.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/usart.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/usart.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\usb.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\usb.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/usb.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/usb.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\MT6261\\Drivers\\ustimer.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\MT6261\\Drivers\\ustimer.c",
+  "file": "C:/Projects/ultra700/src/Lib/MT6261/Drivers/ustimer.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/MT6261/Drivers/ustimer.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Lib\\USB\\usb9.c.obj -c C:\\Projects\\ultra700\\src\\Lib\\USB\\usb9.c",
+  "file": "C:/Projects/ultra700/src/Lib/USB/usb9.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Lib/USB/usb9.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\GUI\\gdi.c.obj -c C:\\Projects\\ultra700\\src\\GUI\\gdi.c",
+  "file": "C:/Projects/ultra700/src/GUI/gdi.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/GUI/gdi.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\GUI\\gdifont.c.obj -c C:\\Projects\\ultra700\\src\\GUI\\gdifont.c",
+  "file": "C:/Projects/ultra700/src/GUI/gdifont.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/GUI/gdifont.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\GUI\\gdiutils.c.obj -c C:\\Projects\\ultra700\\src\\GUI\\gdiutils.c",
+  "file": "C:/Projects/ultra700/src/GUI/gdiutils.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/GUI/gdiutils.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\GUI\\gui.c.obj -c C:\\Projects\\ultra700\\src\\GUI\\gui.c",
+  "file": "C:/Projects/ultra700/src/GUI/gui.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/GUI/gui.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\GUI\\guibutton.c.obj -c C:\\Projects\\ultra700\\src\\GUI\\guibutton.c",
+  "file": "C:/Projects/ultra700/src/GUI/guibutton.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/GUI/guibutton.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\GUI\\guilabel.c.obj -c C:\\Projects\\ultra700\\src\\GUI\\guilabel.c",
+  "file": "C:/Projects/ultra700/src/GUI/guilabel.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/GUI/guilabel.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\GUI\\guiobject.c.obj -c C:\\Projects\\ultra700\\src\\GUI\\guiobject.c",
+  "file": "C:/Projects/ultra700/src/GUI/guiobject.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/GUI/guiobject.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\GUI\\guiwin.c.obj -c C:\\Projects\\ultra700\\src\\GUI\\guiwin.c",
+  "file": "C:/Projects/ultra700/src/GUI/guiwin.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/GUI/guiwin.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\appinit.c.obj -c C:\\Projects\\ultra700\\src\\Application\\appinit.c",
+  "file": "C:/Projects/ultra700/src/Application/appinit.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/appinit.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\audio_note.c.obj -c C:\\Projects\\ultra700\\src\\Application\\audio_note.c",
+  "file": "C:/Projects/ultra700/src/Application/audio_note.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/audio_note.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\backlight.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\backlight.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/backlight.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/backlight.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\delay.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\delay.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/delay.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/delay.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\dflib.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\dflib.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/dflib.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/dflib.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\ft6236.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\ft6236.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/ft6236.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/ft6236.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\ili9341.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\ili9341.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/ili9341.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/ili9341.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\simple_keypad.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\simple_keypad.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/simple_keypad.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/simple_keypad.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\single_led.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\single_led.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/single_led.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/single_led.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\sdcard.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\sdcard.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/sdcard.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/sdcard.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\pcm_player.c.obj -c C:\\Projects\\ultra700\\src\\Application\\pcm_player.c",
+  "file": "C:/Projects/ultra700/src/Application/pcm_player.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/pcm_player.c.obj"
+},
+{
+  "directory": "C:/Projects/ultra700/build",
+  "command": "C:\\Projects\\ultra700\\gcc\\bin\\arm-none-eabi-gcc.exe -DTARGET_SYSTEM -IC:/Projects/ultra700/src -IC:/Projects/ultra700/src/Lib -IC:/Projects/ultra700/src/Lib/USB -IC:/Projects/ultra700/src/Lib/MT6261 -IC:/Projects/ultra700/src/Lib/MT6261/Drivers -IC:/Projects/ultra700/src/Application -IC:/Projects/ultra700/src/Application/Drivers -IC:/Projects/ultra700/src/System -IC:/Projects/ultra700/src/GUI -IC:/Projects/ultra700/src/GUI/Resource -IC:/Projects/ultra700/src/Bootloader -mcpu=arm926ej-s -marm -msoft-float -ffreestanding -fno-builtin -fdata-sections -ffunction-sections -fno-exceptions -fno-unwind-tables -fno-asynchronous-unwind-tables -std=gnu11 -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-sign-compare -o CMakeFiles\\payload.elf.dir\\src\\Application\\Drivers\\usbdevice_cdc.c.obj -c C:\\Projects\\ultra700\\src\\Application\\Drivers\\usbdevice_cdc.c",
+  "file": "C:/Projects/ultra700/src/Application/Drivers/usbdevice_cdc.c",
+  "output": "C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir/src/Application/Drivers/usbdevice_cdc.c.obj"
+}
+]

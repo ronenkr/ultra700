@@ -1,0 +1,4 @@
+C:/Projects/ultra700/build/CMakeFiles/bootloader.elf.dir
+C:/Projects/ultra700/build/CMakeFiles/payload.elf.dir
+C:/Projects/ultra700/build/CMakeFiles/edit_cache.dir
+C:/Projects/ultra700/build/CMakeFiles/rebuild_cache.dir

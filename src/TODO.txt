@@ -1,0 +1,11 @@
+1. LCD init                                             |X
+2. Sound usage
+3. SD card reading
+4. SD CARD DMA channel
+5. Malloc free test
+6. Second bootloader needed ? battery on, pwr button
+7. map all other LEDs
+8. SD card mode when off and plugged in
+9. Port MCUME to this thing
+10.Zork!
+11.Keys backlight
