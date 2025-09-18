@@ -1,5 +1,9 @@
 # Ultra 700 Servo Phone – Bare‑Metal Peripheral Demo
 
+<p align="center">
+	<img src="images/ultra700.jpg" alt="Ultra 700 Servo Phone Board" width="380" />
+</p>
+
 This repository is a test / exploration project for the Ultra 700 (MT6261 class) “servo” feature phone platform. It showcases a minimal, clean-room style bring‑up of core on‑board peripherals and subsystems under a fully bare‑metal (no RTOS) environment using a bundled GCC ARM toolchain and CMake/Ninja build flow.
 
 ## Implemented Features
