@@ -58,8 +58,8 @@
 
 /* SD card driver */
 #define SD_ITF          MSDC0
-#define _SD_CARD_DRIVER_
-//#define _NO_SD_CARD_DRIVER_
+//#define _SD_CARD_DRIVER_
+#define _NO_SD_CARD_DRIVER_
 
 /* Application pins configuration */
 
@@ -94,7 +94,7 @@
 #define SD_CK           GPIO31                                                                      // SD card clock
 #define SD_CK_MODE      GPIO31_MODE_MCCK
 #define SD_CMD          GPIO32                                                                      // SD card CMD / RESPONSE
-#define SD_CMD_MODE     GPIO32_MODE_MCCMD
+#define SD_CMD_MODE     GPIO32_MODE_MCCM0
 #define SD_DA0          GPIO33                                                                      // SD card DATA0 line
 #define SD_DA0_MODE     GPIO33_MODE_MCDA0
 #define SD_DA1          GPIO34                                                                      // SD card DATA1 line

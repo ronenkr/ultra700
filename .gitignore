@@ -4,7 +4,9 @@ gcc.zip
 *.exe
 *.msi
 *.iso
+*.obj
 # Local toolchains
 bin/*.bin
 bin/*.hex
 build/
+

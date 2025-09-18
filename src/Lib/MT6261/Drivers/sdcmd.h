@@ -65,8 +65,8 @@
 // Commands interpretation for MSDC
 #define MSDC_CMD0                   (SDC_RSPTYP(SDC_NO_RSP) | CMD0_GO_IDLE_STATE)
 #define MSDC_CMD1                   (SDC_RSPTYP(SDC_RSP_R3) | CMD1_SEND_OP_COND)
-#define MSDC_CMD2                   (SDC_IDRT | SDC_RSPTYP(SDC_RSP_R1) | CMD2_ALL_SEND_CID)
-#define MSDC_CMD3                   (SDC_RSPTYP(SDC_RSP_R3) | CMD3_SEND_RELATIVE_ADDR)
+#define MSDC_CMD2                   (SDC_RSPTYP(SDC_RSP_R2) | CMD2_ALL_SEND_CID)
+#define MSDC_CMD3                   (SDC_RSPTYP(SDC_RSP_R6) | CMD3_SEND_RELATIVE_ADDR)
 #define MSDC_CMD4                   (SDC_RSPTYP(SDC_NO_RSP) | CMD4_SET_DSR)
 #define MSDC_CMD7                   (SDC_RSPTYP(SDC_RSP_R1B) | CMD7_SELECT_CARD)
 #define MSDC_CMD8                   (SDC_RSPTYP(SDC_RSP_R1) | CMD8_SEND_IF_COND)

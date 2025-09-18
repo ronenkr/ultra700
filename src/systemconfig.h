@@ -22,7 +22,7 @@
 #include "systypes.h"
 
 // Watchdog configuration
-#define WDTINTERVAL         2                                                                       // seconds
+#define WDTINTERVAL         30                                                                       // seconds
 
 // Debug USART interface
 #define DBG_USARTn          USART_MODULE1

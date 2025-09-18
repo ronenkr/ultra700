@@ -19,33 +19,6 @@
 #ifndef _SDCARD_H_
 #define _SDCARD_H_
 
-// Basic SD / FAT structures / low level driver
-#include "msdc.h"
-#include <stdint.h>
-#include <stdbool.h>
-
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-// Lightweight public info (subset of msdc internal state)
-typedef struct {
-	bool     present;      // card initialized & selected
-	uint64_t capacity;     // bytes (0 if unknown)
-	uint32_t block_size;   // usually 512
-	uint8_t  card_type;    // hal_sd_card_type_t
-} sdcard_info_t;
-
-// Initialize controller & card. Returns true on success.
-bool SDCARD_Initialize(sdcard_info_t *outInfo);
-
-// Read 'count' 512-byte sectors starting at logical sector 'lba' into buffer.
-// Returns true on success.
-bool SDCARD_ReadSectors(uint32_t lba, void *buffer, uint32_t count);
-
-#ifdef __cplusplus
-}
-#endif
-
+extern boolean SD_Initialize(TMSDC Index);
 
 #endif /* _SDCARD_H_ */

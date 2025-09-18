@@ -102,6 +102,7 @@ __ctz_hash_table:
     .byte   0X09, 0XFF, 0XFF, 0X18, 0XFF, 0XFF, 0X14, 0X1A
     .byte   0X1E, 0XFF, 0XFF, 0XFF, 0XFF, 0X17, 0XFF, 0X13
     .byte   0X1D, 0XFF, 0X16, 0X12, 0X1C, 0X11, 0X10
+    .balign 4
 ///////////////////////////////////////////////////////////////////////////////////////////////////
     .globl  __clz
     .type   __clz, %function
@@ -130,6 +131,7 @@ __clz_hash_table:
     .byte   0XFF, 0XFF, 0XFF, 0X02, 0X1B, 0X00, 0X19, 0XFF
     .byte   0X16, 0XFF, 0X0C, 0XFF, 0XFF, 0X03, 0X1C, 0XFF
     .byte   0X17, 0XFF, 0X04, 0X1D, 0XFF, 0XFF, 0X1E, 0X1F
+    .balign 4
 ///////////////////////////////////////////////////////////////////////////////////////////////////
     .align  2
     .globl  __get_cpu_freq_ticks

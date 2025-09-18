@@ -20,6 +20,8 @@
 */
 #include "systemconfig.h"
 #include "appinit.h"
+#include <stdint.h>
+#include "pmu.h"  // For VMC_CON0, PMU_SetVoltageVMC, etc.
 #include "appdrivers.h"
 #include "simple_keypad.h"
 #include "single_led.h"
@@ -36,10 +38,44 @@
 #include <string.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdint.h>
+#ifndef UINT32_MAX
+// Fallback if stdint wasn't provided by toolchain headers for some reason
+typedef unsigned char uint8_t;
+typedef unsigned short uint16_t;
+typedef unsigned int uint32_t;
+typedef signed char int8_t;
+typedef signed short int16_t;
+typedef signed int int32_t;
+#endif
 #include "usb_print.h"
 #include "audio_note.h"   // For tone playback on key press
 #include "pcm_player.h"    // For PCM sample playback on 'E'
-#include "sdcard.h"        // For SD root listing on Enter key
+#if 0 // legacy SD card driver header (not used in minimal path)
+#include "sdcard.h"
+#endif
+#include "msdc.h"          // For minimal raw SD access
+#include "sdcmd.h"
+// Root clock (CONFIG_BASE) minimal defs
+#ifndef CONFIG_BASE
+#define CONFIG_BASE 0xA0010000u
+#endif
+#define PLL_CLK_CONDD   (*(volatile uint32_t*)(CONFIG_BASE + 0x010C))
+#ifndef RG_MSDC1_26M_SEL
+#define RG_MSDC1_26M_SEL (1u<<0)
+#define RG_MSDC2_26M_SEL (1u<<4)
+#endif
+static void msdc_root_clock_enable(int ctrl_index){
+    uint32_t bit = (ctrl_index==0)? RG_MSDC1_26M_SEL : RG_MSDC2_26M_SEL;
+    uint32_t before = PLL_CLK_CONDD;
+    PLL_CLK_CONDD = before | bit;
+    uint32_t after = PLL_CLK_CONDD;
+    USB_Print("SD(min): rootclk ctrl=%d bit=0x%lX %08lX->%08lX\r\n",ctrl_index,(unsigned long)bit,(unsigned long)before,(unsigned long)after);
+}
+// Watchdog handling: if project provides WDT APIs, define WDT_PET() macro accordingly.
+#ifndef WDT_PET
+#define WDT_PET() do { /* no-op */ } while(0)
+#endif
 
 // ---------------- Integer Benchmark (triggered by 'W' key, key_id 19) ----------------
 static void RunIntBenchmark(void)
@@ -88,6 +124,7 @@ static void RunIntBenchmark(void)
 static void DrawText_WPressed(void)
 {
     // Choose layer 0 (RGB565) for now; overlay layer 3 is used for keypad bits and may be cleared.
+
     TVLINDEX layer = 0;
     static char msg[] = "W PRESSED"; // message (modifiable storage)
     // Build text object
@@ -114,6 +151,62 @@ static void DrawText_WPressed(void)
     LCDIF_UpdateRectangle(client);
     USB_Print("Displayed text: '%s' at (%d,%d) size %dx%d\n", msg, (int)x, (int)y, txt.Extent.sx, txt.Extent.sy);
 }
+
+// Minimal SD init + read LBA0 using MSDC0
+// Wait for command ready (CMDRDY) with a simple timeout in microseconds
+static boolean msdc_wait_cmd_ready(volatile TMSDCREGS *m, uint32_t tout_us)
+{
+    boolean saw_busy = false;
+    while (tout_us--) {
+        uint32_t cmdsta = m->SDC_CMDSTA;
+        uint32_t sdcsta = m->SDC_STA; // busy bits
+        if (cmdsta & SDC_CMDRDY) return true;      // normal completion
+        if (cmdsta & SDC_CMDTO) return false;      // explicit timeout from HW
+        if (sdcsta & (SDC_BECMDBUSY | SDC_FECMDBUSY)) saw_busy = true; // command engine toggled
+        else if (saw_busy) {
+            // Busy cleared after being set -> treat as completion even if CMDRDY not set
+            return true;
+        }
+        USC_Pause_us(1);
+    }
+    // Fallback: success if CMDRDY or busy never asserted (card might be absent) -> report false
+    return (m->SDC_CMDSTA & SDC_CMDRDY) != 0;
+}
+
+// Define to enable verbose debug of minimal SD path
+// Set to 1 for verbose logging during minimal SD init
+#ifndef SD_MIN_DEBUG
+#define SD_MIN_DEBUG 1
+#endif
+
+
+// Minimal wrapper using clean-room sd_minimal driver (MSDC2 only)
+#include "sd_minimal.h"
+static boolean SD_Minimal_InitAndReadLBA0(uint8_t *buf512)
+{
+    if (!buf512) return false;
+    static boolean inited = false;
+    if (!inited) {
+        USB_Print("SD(min): init starting\n");
+        if (!SDM_Init()) {
+            const char *stage = SDM_GetLastFailStage();
+            USB_Print("SD(min): init failed (stage=%s)\n", stage?stage:"?");
+            return false;
+        }
+        inited = true;
+        int ct = SDM_GetCardType();
+        USB_Print("SD(min): card type=%d (0 none,1 SDSC,2 SDHC)\n", ct);
+    }
+    if (!SDM_ReadBlock0(buf512)) {
+        USB_Print("SD(min): read LBA0 failed\n");
+        return false;
+    }
+    USB_Print("SD(min): LBA0 first 16 bytes: ");
+    for (int i=0;i<16;i++) USB_Print("%02X", buf512[i]);
+    USB_Print("\r\n");
+    return true;
+}
+
 
 // Simple USB CDC support for key event transmission
 static TCDCEVENTER g_cdcEventer; // Persist for writes
@@ -274,8 +367,6 @@ boolean APP_Initialize(void)
         LCDIF_UpdateRectangle(big_test3);
         delayMs(220); // Wait 220ms
 
-
-
         USB_Initialize();
         USB_EnableDevice();
 
@@ -289,27 +380,6 @@ boolean APP_Initialize(void)
         {
             USB_CDC_Open(&g_cdcEventer);
         }
-
-        // SD Card: one-time initialization and sector0 dump
-        /*{
-            sdcard_info_t info;
-            if (SDCARD_Initialize(&info)) {
-                USB_Print("SDCARD: init ok type=%u cap=%luKB block=%u\n", (unsigned)info.card_type, (unsigned long)(info.capacity/1024u), info.block_size);
-                static uint8_t s_sector0[SECTOR_SIZE];
-                if (SDCARD_ReadSectors(0, s_sector0, 1)) {
-                    USB_Print("SDCARD: LBA0 (first 64 bytes)\n");
-                    for (unsigned i=0;i<64;i++) {
-                        if ((i & 0x0F)==0) USB_Print("%04X: ", i);
-                        USB_Print("%02X ", s_sector0[i]);
-                        if ((i & 0x0F)==0x0F) USB_Print("\n");
-                    }
-                } else {
-                    USB_Print("SDCARD: read sector0 failed\n");
-                }
-            } else {
-                USB_Print("SDCARD: initialization failed\n");
-            }
-        }*/
 
 
     // Run I2C scan (touch panel bus) once USB is ready for output
@@ -375,18 +445,10 @@ void APP_ProcessEvents(void)
                     DrawText_WPressed();
                     Beep();
                     break;
-                case 3: { // Enter key: re-read & dump sector0
-                    static uint8_t s_sector0[SECTOR_SIZE];
-                    if (SDCARD_ReadSectors(0, s_sector0, 1)) {
-                        USB_Print("SDCARD: (Enter) LBA0 first 64 bytes:\n");
-                        for (unsigned i=0;i<64;i++) {
-                            if ((i & 0x0F)==0) USB_Print("%04X: ", i);
-                            USB_Print("%02X ", s_sector0[i]);
-                            if ((i & 0x0F)==0x0F) USB_Print("\n");
-                        }
-                    } else {
-                        USB_Print("SDCARD: (Enter) read sector0 failed\n");
-                    }
+                case 3: { // Enter key: minimal SD test (no SECTOR_SIZE dependency)
+                    uint8_t buf[512];
+                    boolean ok = SD_Minimal_InitAndReadLBA0(buf);
+                    USB_Print("SD(min): %s (first byte 0x%02X)\r\n", ok?"OK":"FAIL", (unsigned)buf[0]);
                     break; }
                 case 46: { // 'A' key -> play a short melody (blocking)
                     struct Note { uint16_t f; uint16_t ms; };
