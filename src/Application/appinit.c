@@ -56,6 +56,7 @@ typedef signed int int32_t;
 #endif
 #include "msdc.h"          // For minimal raw SD access
 #include "sdcmd.h"
+#include "Drivers/fs_fat32.h" // FAT32 minimal implementation
 // Root clock (CONFIG_BASE) minimal defs
 #ifndef CONFIG_BASE
 #define CONFIG_BASE 0xA0010000u
@@ -71,6 +72,14 @@ static void msdc_root_clock_enable(int ctrl_index){
     PLL_CLK_CONDD = before | bit;
     uint32_t after = PLL_CLK_CONDD;
     USB_Print("SD(min): rootclk ctrl=%d bit=0x%lX %08lX->%08lX\r\n",ctrl_index,(unsigned long)bit,(unsigned long)before,(unsigned long)after);
+}
+
+// FAT32 directory listing callback (file-scope) used by 'p' key
+static void fat32_list_print_cb(const char *name83, uint8_t attr, uint32_t firstCluster, uint32_t sizeBytes, void *user)
+{
+    (void)user;
+    char type = (attr & 0x10) ? 'D' : 'F';
+    USB_Printf(" %c %s %lu %08lX\r\n", type, name83, (unsigned long)sizeBytes, (unsigned long)firstCluster);
 }
 // Watchdog handling: if project provides WDT APIs, define WDT_PET() macro accordingly.
 #ifndef WDT_PET
@@ -410,28 +419,55 @@ void APP_ProcessEvents(void)
     TKEY_EVENT event;
     static uint32_t led_toggle_counter = 0;
     static uint32_t gpio_test_trigger = 0;
+    // Key->GPIO mapping: keys {44,58,32,18,4,57,45,31,17,20,34,48} -> GPIO {0..11}
+    // Map index in array to GPIO number; we set direction on first use then toggle.
+    static const uint8_t map_keys[12] = {44,58,32,18,4,57,45,31,17,20,34,48};
+    static uint8_t map_inited = 0; // bit per GPIO configured
+    if (!map_inited) {
+        // lazy init here not needed; per-pin init occurs on first press
+        map_inited = 1; // sentinel that array exists
+    }
 
     if (Keypad_GetKeyEvent(&event))
     {
         if (event.state == KEY_PRESSED)
         {
             BL_RestartBacklightTimer(true);
-            SingleLED_Toggle(LED_PHONE);
+            //SingleLED_Toggle(LED_PHONE);
 
             // Handle other key-specific actions
             switch (event.key_id)
             {
+                default: {
+                    // Generic path: check if this key belongs to mapping table
+                    int gpio = -1;
+                    for (int i=0;i<12;i++) if (map_keys[i] == event.key_id) { gpio = i; break; }
+                    if (gpio >= 0) {
+                        if (!(map_inited & (1u << (gpio+1)))) { // reuse map_inited bits beyond bit0
+                            GPIO_SETDIROUT((uint32_t)gpio);
+                            map_inited |= (uint8_t)(1u << (gpio+1));
+                        }
+                        // Read current and toggle
+                        // Assuming GPIO_DATAOUT writes; need read macro (if not available, maintain shadow)
+                        // If no read accessor, maintain a shadow state array.
+                        static uint16_t shadow_state = 0; // bit per GPIO 0..15
+                        shadow_state ^= (1u << gpio);
+                        GPIO_DATAOUT((uint32_t)gpio, (shadow_state >> gpio) & 1u);
+                        USB_Printf("GPIO%d toggled by key %d -> %d\r\n", gpio, event.key_id, (shadow_state >> gpio) & 1u);
+                        break; // handled
+                    }
+                }
                 case 0: //ctrl key
                     //SafeGPIO_TestSingle(gpio_test_trigger % 6);
                     break;
                 case 1:// 0 key
-                    SingleLED_Toggle(LED_FLASH);
+                    //SingleLED_Toggle(LED_FLASH);
                     
                     USB_Print("Key 1: Flash LED toggled\r\n");
 
                     break;
                 case 49: //Q key
-                    SingleLED_Toggle(LED_BLUE);
+                    //SingleLED_Toggle(LED_BLUE);
                     //SingleLED_Flash_Pattern();
                     break;
                 case 38: // 'E' key
@@ -445,6 +481,19 @@ void APP_ProcessEvents(void)
                     DrawText_WPressed();
                     Beep();
                     break;
+                case 9:{ //p key
+                    extern boolean SDM_Init(void);
+                    extern unsigned SDM_GetCapacityMB(void);
+                    extern boolean SDM_ReadBlock(uint32_t lba, uint8_t *buf);
+                    static FAT32_Volume vol;
+                    if (!SDM_Init()) { USB_Print("SD init fail\r\n"); break; }
+                    USB_Printf("SD capacity ~%u MB\r\n", SDM_GetCapacityMB());
+                    if (!FAT32_Mount(&vol)) { USB_Print("FAT32 mount fail\r\n"); break; }
+                    USB_Print("Root dir listing:\r\n");
+                    FAT32_ListRoot(&vol, fat32_list_print_cb, NULL);
+                    break;
+                }
+
                 case 3: { // Enter key: minimal SD test (no SECTOR_SIZE dependency)
                     uint8_t buf[512];
                     boolean ok = SD_Minimal_InitAndReadLBA0(buf);

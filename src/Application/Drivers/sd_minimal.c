@@ -359,45 +359,34 @@ boolean SDM_Init(void)
 
 boolean SDM_ReadBlock0(uint8_t *buf)
 {
+    return SDM_ReadBlock(0, buf);
+}
+
+boolean SDM_ReadBlock(uint32_t lba, uint8_t *buf)
+{
     if (!buf) return false;
     if (g_cardType == SDM_CARD_NONE) return false;
     uint32_t base = (g_activeController==0)?0xA0130000u:0xA0270000u;
-
-    // Set block size again (safety)
-    // block len update
     *(volatile uint32_t*)(base + 0x0020) = (*(volatile uint32_t*)(base + 0x0020) & 0xFFFF0000u) | 512u;
-
-    unsigned arg = 0; // LBA0, for SDHC still 0; for SDSC multiply by 512 but zero anyway
+    unsigned arg = (g_cardType == SDM_CARD_SDHC) ? lba : (lba * 512u);
     if (send_cmd_base(base, SDM_CMD17_READ_SINGLE, arg)) return false;
-
-    // Poll status & drain FIFO: controller asserts DRQ when 32-bit word available
     uint32_t *p = (uint32_t*)buf;
     unsigned words = 512/4;
-    unsigned timeout = 2000000; // ~2s @1us loops
+    unsigned timeout = 2000000;
     volatile uint32_t *sta = (uint32_t*)(base + 0x0004);
     volatile uint32_t *dat = (uint32_t*)(base + 0x0010);
     while (words && timeout--) {
-        if (*sta & SDM_MSDC_STA_DRQ) {
-            *p++ = *dat;
-            --words;
-        }
+        if (*sta & SDM_MSDC_STA_DRQ) { *p++ = *dat; --words; }
     }
     if (words) {
-        SDM_LOG("READ timeout remain=%u STA=%08lX DATSTA=%08lX\n", words,
-                (unsigned long)*sta, (unsigned long)*(volatile uint32_t*)(base + 0x0044));
+        SDM_LOG("READ timeout LBA=%lu remain=%u STA=%08lX DATSTA=%08lX\n", (unsigned long)lba, words,
+            (unsigned long)*sta, (unsigned long)*(volatile uint32_t*)(base + 0x0044));
         msdc_reset_fifo_base(base);
         *sta |= SDM_MSDC_STA_FIFOCLR;
         return false;
     }
     *sta |= SDM_MSDC_STA_FIFOCLR;
     msdc_reset_fifo_base(base);
-    // Hexdump first 64 bytes for verification
-    SDM_LOG("BLK0:");
-    for (unsigned i=0;i<64;i++) {
-        if ((i & 0x0F)==0) USB_Print("\n%03u:", i);
-        USB_Print(" %02X", buf[i]);
-    }
-    USB_Print("\n");
     return true;
 }
 

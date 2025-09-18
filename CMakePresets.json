@@ -1,0 +1,45 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 21,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "arm-release",
+      "displayName": "ARM Release (Ninja)",
+      "description": "Release build for ARM toolchain using bundled ninja and custom toolchain file",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "cmake/toolchain-arm-none-eabi.cmake",
+        "CMAKE_MAKE_PROGRAM": "${sourceDir}/tools/ninja/ninja.exe"
+      }
+    },
+    {
+      "name": "arm-debug",
+      "displayName": "ARM Debug (Ninja)",
+      "description": "Debug build with symbols",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_TOOLCHAIN_FILE": "cmake/toolchain-arm-none-eabi.cmake",
+        "CMAKE_MAKE_PROGRAM": "${sourceDir}/tools/ninja/ninja.exe"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "arm-release",
+      "configurePreset": "arm-release"
+    },
+    {
+      "name": "arm-debug",
+      "configurePreset": "arm-debug"
+    }
+  ],
+  "testPresets": []
+}

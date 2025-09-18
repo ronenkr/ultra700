@@ -108,6 +108,7 @@ extern "C" {
 
 boolean SDM_Init(void);                 // probe MSDC0 then MSDC2; initialize first responding card
 boolean SDM_ReadBlock0(uint8_t *buf);   // read LBA0 (512B)
+boolean SDM_ReadBlock(uint32_t lba, uint8_t *buf); // generic single block read
 int  SDM_GetCardType(void);          // return SDM_CARD_* value
 unsigned SDM_CardDetectRaw(void);  // Add prototype for SDM_CardDetectRaw
 const char *SDM_GetLastFailStage(void); // NULL if last init succeeded

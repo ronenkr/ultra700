@@ -156,6 +156,7 @@ set(PAYLOAD_SRCS
   ${PROJ_SRC_DIR}/Application/Drivers/single_led.c
   ${PROJ_SRC_DIR}/Application/Drivers/sdcard.c
   ${PROJ_SRC_DIR}/Application/Drivers/sd_minimal.c
+  ${PROJ_SRC_DIR}/Application/Drivers/fs_fat32.c
   ${PROJ_SRC_DIR}/Application/pcm_player.c
   ${PROJ_SRC_DIR}/Application/Drivers/usbdevice_cdc.c
 )

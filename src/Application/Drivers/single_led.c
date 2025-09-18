@@ -8,7 +8,7 @@
 
 #define FLASH_LED_GPIO   GPIO5  // Flash LED (confirmed)
 #define PHONE_LED_GPIO   GPIO7  // Red Phone LED (confirmed)
-#define BLUE_LED_GPIO    GPIO4  // Blue LED (new)
+#define BLUE_LED_GPIO    GPIO3  // Blue LED (new)
 
 static boolean flash_led_state = false;
 static boolean phone_led_state = false;
@@ -24,11 +24,11 @@ void SingleLED_Initialize(void)
     GPIO_Setup(PHONE_LED_GPIO, GPDO | GPMODE(GPIO07_MODE_IO));
     GPIO_DATAOUT(PHONE_LED_GPIO, false);
 
-    // Setup GPIO4 as output (Blue LED)
-    GPIO_Setup(BLUE_LED_GPIO, GPDO | GPMODE(GPIO04_MODE_IO));
+    // Setup GPIO3 as output (Blue LED)
+    GPIO_Setup(BLUE_LED_GPIO, GPDO | GPMODE(GPIO03_MODE_IO));
     GPIO_DATAOUT(BLUE_LED_GPIO, false);
     
-    DebugPrint("LEDs: Init GPIO5(Flash) GPIO7(Phone) GPIO4(Blue)\n");
+    DebugPrint("LEDs: Init GPIO5(Flash) GPIO7(Phone) GPIO3(Blue)\n");
 }
 
 void SingleLED_Set(TLED_TYPE led, boolean state)
