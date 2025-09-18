@@ -9,4 +9,5 @@ gcc.zip
 bin/*.bin
 bin/*.hex
 build/
+build-debug/
 
