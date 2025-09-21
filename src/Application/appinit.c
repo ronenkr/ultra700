@@ -57,6 +57,8 @@ typedef signed int int32_t;
 #include "msdc.h"          // For minimal raw SD access
 #include "sdcmd.h"
 #include "Drivers/fs_fat32.h" // FAT32 minimal implementation
+// FatFs (Chan) for full FAT support
+#include "ff.h"
 // Root clock (CONFIG_BASE) minimal defs
 #ifndef CONFIG_BASE
 #define CONFIG_BASE 0xA0010000u
@@ -293,6 +295,8 @@ void USB_Printf(const char *fmt, ...)
 
 boolean APP_Initialize(void)
 {
+    static FATFS s_fs; // FatFs volume object
+    static int s_fs_mounted = 0;
     do
     {
         if (!GUI_Initialize()) break;
@@ -406,6 +410,34 @@ boolean APP_Initialize(void)
     USB_Print("Other keys: Phone LED (GPIO7) toggles\n");
     USB_Print("============================\n");
 
+        // Initialize SD card and mount FatFs, then show volume info
+        {
+            if (!SDM_Init()) {
+                USB_Print("SDM_Init failed for FatFs mount\r\n");
+            } else {
+                FRESULT fr = f_mount(&s_fs, "", 1);
+                if (fr == FR_OK) {
+                    s_fs_mounted = 1;
+                    DWORD free_clust = 0; FATFS *pfs = NULL;
+                    char label[32] = {0}; DWORD vsn = 0;
+                    (void)f_getlabel("", label, &vsn);
+                    if (f_getfree("", &free_clust, &pfs) == FR_OK && pfs) {
+                        DWORD tot_sect = (pfs->n_fatent - 2) * pfs->csize;
+                        DWORD fre_sect = free_clust * pfs->csize;
+                        unsigned cap_mb = SDM_GetCapacityMB();
+                        unsigned total_mb = (unsigned)(tot_sect / 2048u);
+                        unsigned free_mb  = (unsigned)(fre_sect / 2048u);
+                        USB_Printf("FatFs: label='%s' VSN=%08lX total≈%uMB free≈%uMB SD cap≈%uMB\r\n",
+                                   label[0]?label:"(no-label)", (unsigned long)vsn, total_mb, free_mb, cap_mb);
+                    } else {
+                        USB_Print("FatFs: f_getfree failed\r\n");
+                    }
+                } else {
+                    USB_Printf("FatFs: mount failed fr=%d\r\n", (int)fr);
+                }
+            }
+        }
+
         return true;
     }
     while(0);
@@ -474,9 +506,51 @@ void APP_ProcessEvents(void)
                     PCM_Player_PlaySample();
                     USB_Printf("Key e: cpu freq: %u Hz\r\n", GetCPUFrequency());
                     break;
-                case 76: // OTH key -> integer benchmark
-                    RunIntBenchmark();
-                    break;
+                case 76: { // key 76: list SD root (FatFs) and dump first file's 16 bytes
+                    FRESULT fr;
+                    DIR dir; FILINFO fno; char path[] = "/";
+                    char firstName[256]; firstName[0] = '\0';
+                    fr = f_opendir(&dir, path);
+                    if (fr == FR_OK) {
+                        USB_Print("FatFs root listing:\r\n");
+                        for (;;) {
+                            fr = f_readdir(&dir, &fno);
+                            if (fr != FR_OK || fno.fname[0] == 0) break;
+                            const char *name = fno.fname[0] ? fno.fname : fno.altname;
+                            USB_Printf(" %c %s %lu\r\n", (fno.fattrib & AM_DIR)?'D':'F', name, (unsigned long)fno.fsize);
+                            if ((fno.fattrib & AM_DIR) == 0 && firstName[0] == '\0') {
+                                unsigned i = 0; while (name[i] && i < sizeof(firstName)-1) { firstName[i] = name[i]; i++; }
+                                firstName[i] = '\0';
+                            }
+                        }
+                        f_closedir(&dir);
+
+                        if (firstName[0]) {
+                            FIL fh; BYTE buf[16]; UINT br = 0; char full[300];
+                            full[0] = '/';
+                            unsigned i = 0; while (firstName[i] && i < sizeof(full)-2) { full[i+1] = firstName[i]; i++; }
+                            full[i+1] = '\0';
+                            fr = f_open(&fh, full, FA_READ);
+                            if (fr == FR_OK) {
+                                fr = f_read(&fh, buf, sizeof(buf), &br);
+                                if (fr == FR_OK) {
+                                    USB_Printf("First file: %s first %lu bytes: ", firstName, (unsigned long)br);
+                                    for (UINT j = 0; j < br; ++j) USB_Print("%02X", buf[j]);
+                                    USB_Print("\r\n");
+                                } else {
+                                    USB_Printf("FatFs: f_read failed fr=%d\r\n", (int)fr);
+                                }
+                                f_close(&fh);
+                            } else {
+                                USB_Printf("FatFs: f_open '%s' failed fr=%d\r\n", full, (int)fr);
+                            }
+                        } else {
+                            USB_Print("FatFs: no regular files in root\r\n");
+                        }
+                    } else {
+                        USB_Printf("FatFs: f_opendir failed fr=%d\r\n", (int)fr);
+                    }
+                    break; }
                 case 63: // 'W' key -> draw text using GDI
                     DrawText_WPressed();
                     Beep();

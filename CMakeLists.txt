@@ -157,6 +157,11 @@ set(PAYLOAD_SRCS
   ${PROJ_SRC_DIR}/Application/Drivers/sdcard.c
   ${PROJ_SRC_DIR}/Application/Drivers/sd_minimal.c
   ${PROJ_SRC_DIR}/Application/Drivers/fs_fat32.c
+  # FatFs (Chan) files
+  ${PROJ_SRC_DIR}/Application/Drivers/ff.c
+  ${PROJ_SRC_DIR}/Application/Drivers/ffunicode.c
+  ${PROJ_SRC_DIR}/Application/Drivers/ffsystem.c
+  ${PROJ_SRC_DIR}/Application/Drivers/diskio.c
   ${PROJ_SRC_DIR}/Application/pcm_player.c
   ${PROJ_SRC_DIR}/Application/Drivers/usbdevice_cdc.c
 )

@@ -26,13 +26,13 @@
 #define GPIO_MC2_DAT0   29
 
 // Simple debug macro (USB_Print style assumed available via printf fallback)
-#ifndef SDM_DEBUG
+
 #define SDM_DEBUG 1
-#endif
+
 #if SDM_DEBUG
 #define SDM_LOG(fmt, ...) USB_Print("SDM: " fmt, ##__VA_ARGS__)
 #else
-#define SDM_LOG(fmt, ...)
+#define SDM_LOG(fmt, ...) 
 #endif
 
 static int g_cardType = SDM_CARD_NONE; // internal card type
@@ -153,7 +153,7 @@ static int send_cmd_base(uint32_t base, unsigned cmd, unsigned arg)
     // Clear lingering status from prior command
     (void)*cmdsta;
     unsigned pre_sta = *sta;
-    SDM_LOG("CMD%u: ARG=%08lX raw=%04X PRE_STA=%08lX\n", idx, (unsigned long)arg, cmd, (unsigned long)pre_sta);
+    //SDM_LOG("CMD%u: ARG=%08lX raw=%04X PRE_STA=%08lX\n", idx, (unsigned long)arg, cmd, (unsigned long)pre_sta);
 
     *argp = arg;
     *cmdp = cmd; // launch command

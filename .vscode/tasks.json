@@ -1,34 +1,162 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Configure CMake (Ninja)",
-      "type": "shell",
-      "command": "cmake",
-      "args": ["-S", ".", "-B", "build", "-G", "Ninja", "-DCMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake"],
-      "options": {"cwd": "${workspaceFolder}"},
-      "problemMatcher": ["$gcc"],
-      "group": "build"
-    },
-    {
-      "label": "Build: bootloader",
-      "type": "shell",
-      "command": "cmake",
-      "args": ["--build", "build", "--target", "bootloader.elf", "--config", "Release"],
-      "options": {"cwd": "${workspaceFolder}"},
-      "problemMatcher": ["$gcc"],
-      "group": "build",
-      "dependsOn": ["Configure CMake (Ninja)"]
-    },
-    {
-      "label": "Build: payload",
-      "type": "shell",
-      "command": "cmake",
-      "args": ["--build", "build", "--target", "payload.elf", "--config", "Release"],
-      "options": {"cwd": "${workspaceFolder}"},
-      "problemMatcher": ["$gcc"],
-      "group": "build",
-      "dependsOn": ["Configure CMake (Ninja)"]
-    }
-  ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Configure CMake (Ninja)",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"-S",
+				".",
+				"-B",
+				"build",
+				"-G",
+				"Ninja",
+				"-DCMAKE_TOOLCHAIN_FILE=cmake/toolchain-arm-none-eabi.cmake"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build: bootloader",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"build",
+				"--target",
+				"bootloader.elf",
+				"--config",
+				"Release"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"dependsOn": [
+				"Configure CMake (Ninja)"
+			]
+		},
+		{
+			"label": "Build: payload",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"build",
+				"--target",
+				"payload.elf",
+				"--config",
+				"Release"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"dependsOn": [
+				"Configure CMake (Ninja)"
+			]
+		},
+		{
+			"label": "Build payload.elf (preset)",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"--preset",
+				"arm-release",
+				"--target",
+				"payload.elf",
+				"-j"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build payload.elf (preset)",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"--preset",
+				"arm-release",
+				"--target",
+				"payload.elf",
+				"-j"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build payload.elf (preset)",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"--preset",
+				"arm-release",
+				"--target",
+				"payload.elf",
+				"-j"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build payload.elf (preset)",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"--preset",
+				"arm-release",
+				"--target",
+				"payload.elf",
+				"-j"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build payload.elf (preset)",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"--preset",
+				"arm-release",
+				"--target",
+				"payload.elf",
+				"-j"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		}
+	]
 }
