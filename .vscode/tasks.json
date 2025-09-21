@@ -157,6 +157,36 @@
 				"$gcc"
 			],
 			"group": "build"
+		},
+		{
+			"label": "Build payload.elf (preset)",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"--preset",
+				"arm-release",
+				"--target",
+				"payload.elf",
+				"-j"
+			],
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build payload.elf (preset)",
+			"type": "shell",
+			"command": "cmake",
+			"args": [
+				"--build",
+				"--preset",
+				"arm-release",
+				"--target",
+				"payload.elf",
+				"-j"
+			],
+			"isBackground": false,
+			"group": "build"
 		}
 	]
 }

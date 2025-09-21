@@ -506,6 +506,13 @@ void APP_ProcessEvents(void)
                     PCM_Player_PlaySample();
                     USB_Printf("Key e: cpu freq: %u Hz\r\n", GetCPUFrequency());
                     break;
+                case 68: { // Print PMU status
+                    USB_Printf("VBAT=%umV, lvl=%u/1000, USB=%d, CHG=%d\n",
+                               PMU_GetBatteryVoltageMV(),
+                               PMU_GetBatteryChargeLevel(),
+                               PMU_IsChargerConnected(),
+                               PMU_IsBatteryCharging());
+                    break; }
                 case 76: { // key 76: list SD root (FatFs) and dump first file's 16 bytes
                     FRESULT fr;
                     DIR dir; FILINFO fno; char path[] = "/";

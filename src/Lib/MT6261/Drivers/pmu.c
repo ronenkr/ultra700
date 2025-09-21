@@ -338,6 +338,15 @@ boolean PMU_IsBatteryCharging(void)
 #endif
 }
 
+void PMU_SetChargingEnable(boolean Enabled)
+{
+#if (APPUSEBATTERY != 0)
+    PMU_ChargerEnable(Enabled);
+#else
+    (void)Enabled;
+#endif
+}
+
 uint16_t PMU_GetBatteryVoltageMV(void)
 {
 #if (APPUSEBATTERY != 0)
